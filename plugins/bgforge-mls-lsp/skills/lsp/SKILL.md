@@ -8,22 +8,18 @@ description: >
 
 An LSP server is available for `.ssl`, `.h`, `.baf`, `.slb`, `.d`, `.tp2`, `.tpa`, `.tph`, `.tpp` files.
 
-When first opening any of these files, call `LSP documentSymbol` in parallel with `Read` to warm up the server (it needs a few seconds to initialize).
+IMPORTANT: The LSP server IS installed and working for ALL these file types. Getting 0 results from documentSymbol or any other operation does NOT mean the server is missing or broken. Many modding files have no document symbols. The server also takes time to initialize, so if the first request fails or returns nothing, retry. NEVER conclude that the LSP is unavailable based on empty results. Always continue using LSP hover, go-to-definition, and other operations.
 
-Use LSP hover for documentation before relying on training data. Use LSP go-to-definition and find-references for navigation instead of grep. Check LSP diagnostics after edits.
+For SSL/D/TP2 files, call `LSP documentSymbol` in parallel with `Read` to warm up the server. For BAF files, read first, then use `LSP hover` on keywords found in the file.
+
+Use LSP hover for documentation before relying on training data. Use LSP go-to-definition for navigation instead of grep (SSL/D/TP2 only).
 
 Inlay hints show translations for corresponding placeholders: `@123` means translation line number 123 from `.msg` (SSL) or `.tra` (BAF/D/TP2) files.
 
-## Feature matrix
+## Feature matrix (Claude Code LSP operations)
 
-| Feature           | SSL | BAF | D        | TP2      |
-| ----------------- | --- | --- | -------- | -------- |
-| Completion        | +   | +   | +        | +        |
-| Hover             | +   | +   | +        | +        |
-| Signature help    | +   |     |          |          |
-| Go-to-definition  | +   |     | +        | +        |
-| Formatting        | +   | +   | +        | +        |
-| Document symbols  | +   |     | +        | +        |
-| Workspace symbols | +   |     |          | +        |
-| Rename            | +   |     | same file | same file |
-| Inlay hints       | .msg | .tra | .tra    | .tra     |
+| Operation        | SSL | BAF | D   | TP2 |
+| ---------------- | --- | --- | --- | --- |
+| Hover            | +   | +   | +   | +   |
+| Go-to-definition | +   |     | +   | +   |
+| Document symbols | +   |     | +   | +   |
