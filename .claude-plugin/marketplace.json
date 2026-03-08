@@ -1,0 +1,32 @@
+{
+    "name": "bgforge-tools",
+    "owner": {
+        "name": "BGforge",
+        "email": "dev@bgforge.net"
+    },
+    "metadata": {
+        "description": "Code intelligence plugins for classic RPG modding languages (Fallout 1/2, Infinity Engine)"
+    },
+    "plugins": [
+        {
+            "name": "bgforge-mls-lsp",
+            "source": "./plugins/bgforge-mls-lsp",
+            "description": "Code intelligence for Fallout SSL, WeiDU (BAF/D/TP2), and related modding languages",
+            "author": {
+                "name": "BGforge"
+            },
+            "homepage": "https://github.com/BGforgeNet/VScode-BGforge-MLS",
+            "repository": "https://github.com/BGforgeNet/VScode-BGforge-MLS",
+            "keywords": [
+                "lsp",
+                "fallout",
+                "weidu",
+                "infinity-engine",
+                "modding",
+                "baldurs-gate",
+                "icewind-dale"
+            ],
+            "category": "code-intelligence"
+        }
+    ]
+}

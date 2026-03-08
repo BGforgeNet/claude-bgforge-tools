@@ -1,0 +1,25 @@
+{
+    "name": "bgforge-mls-lsp",
+    "version": "3.1.3",
+    "description": "Code intelligence for Fallout SSL, WeiDU (BAF/D/TP2), and related modding languages. Provides diagnostics, go-to-definition, hover, completion, symbols, formatting, and rename for classic RPG modding scripts.",
+    "author": {
+        "name": "BGforge",
+        "email": "bgforge@bgforge.net"
+    },
+    "homepage": "https://github.com/BGforgeNet/VScode-BGforge-MLS",
+    "repository": "https://github.com/BGforgeNet/VScode-BGforge-MLS",
+    "keywords": [
+        "lsp",
+        "code-intelligence",
+        "fallout",
+        "weidu",
+        "infinity-engine",
+        "modding",
+        "baldurs-gate",
+        "icewind-dale",
+        "fallout-ssl",
+        "weidu-tp2",
+        "weidu-baf",
+        "weidu-d"
+    ]
+}

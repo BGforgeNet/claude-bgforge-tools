@@ -1,0 +1,21 @@
+{
+    "bgforge-mls": {
+        "command": "bgforge-mls-server",
+        "args": ["--stdio"],
+        "extensionToLanguage": {
+            ".ssl": "fallout-ssl",
+            ".h": "fallout-ssl",
+            ".baf": "weidu-baf",
+            ".slb": "weidu-baf",
+            ".d": "weidu-d",
+            ".tp2": "weidu-tp2",
+            ".tpa": "weidu-tp2",
+            ".tph": "weidu-tp2",
+            ".tpp": "weidu-tp2",
+            ".tssl": "typescript",
+            ".tbaf": "typescript",
+            ".td": "typescript"
+        },
+        "startupTimeout": 15000
+    }
+}
