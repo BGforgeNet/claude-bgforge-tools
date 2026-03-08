@@ -17,6 +17,8 @@ Code intelligence for Fallout SSL, WeiDU (BAF/D/TP2), and related modding langua
 
 Not all features are available for all languages. BAF has the smallest feature set (completion, hover, formatting, inlay hints). SSL and D have the richest.
 
+The plugin includes a skill that teaches Claude to use LSP tools proactively when working with these file types.
+
 ## Installation
 
 1. Install the language server:
